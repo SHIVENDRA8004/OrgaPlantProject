@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f8f9fa !important ;
+    height: 100vh;
+}
+.searchBar:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid lightgray;
+}
+div input[type="name"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    box-shadow: none;
+    border: 1px solid lightgray;
+}
+
+button {
+    height: 50px;
+    width: 134px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+button.next {
+    font-weight: 400;
+    font-size: 25px;
+}
+select:focus {
+    box-shadow: none;
+    border: 1px solid black;
+}
+input::placeholder {
+    font-size: 0.95rem !important;
+}
+@media screen and (max-width: 480px) {
+    body {
+        height: 150vh;
+    }
+}
